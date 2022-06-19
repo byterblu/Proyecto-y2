@@ -132,7 +132,7 @@
     display: grid;
     grid-template-columns: repeat(1,260px);
     grid-template-rows: repeat(32,40px);
-    gap: 15px;
+    gap: 10px;
 }
 
 .seccion-busqueda-ind{  
@@ -144,8 +144,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     margin-left: 5px;
+    color: white;
 }
 
 .seccion-busqueda-ind span{
@@ -153,4 +154,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.separador{
+    width: 90%;
+    height: 1px;
+    border: 0.1rem solid #383838;
+    
 }
