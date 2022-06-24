@@ -377,6 +377,11 @@ body{
     
 }
 
+.texto-video a{
+    text-decoration: none;
+    
+}
+
 .texto-video h3{
     font-size: 16px;
     color: white;
@@ -609,6 +614,7 @@ body{
     color: white;
     border: none;
     border-radius: 2px;
+    cursor: pointer;
 }
 
 .comentarios{
