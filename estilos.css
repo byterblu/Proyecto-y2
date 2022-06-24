@@ -1,10 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box; 
 }
 
-body{background-color: #181818;}
+body{
+    background-color: #181818;
+    font-family: 'Roboto', sans-serif;
+}
 
 /*HEADER+NAVBAR*/
 
@@ -505,11 +510,60 @@ body{background-color: #181818;}
 
 .nombre-canal-1{
     padding-top: 10px;
-    font-size:14px;
+    font-size:15px;
     color: #7c7c7c;
 }
 
 .visuali-tiempo-1{
    font-size:12px;
    color: #7c7c7c;
+}
+
+/*TEXTO DEL VIDEO*/
+
+.titulo-video{
+    width: 100%;
+    padding-top: 30px;
+}
+
+.titulo-video h2{
+    color: #dcf3fa;
+}
+
+.titulo-video p{
+   color: #3b6fff;
+}
+
+.compartir{
+    width: 100%;
+    padding-top: 20px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 0.1rem solid #383838;
+}
+
+.compartir p{
+    color: #7c7c7c;
+}
+
+.barra-megusta{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.me-gusta{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 15px 0px 10px;
+    cursor: pointer;
+}
+
+.me-gusta span{
+    padding-right: 8px;
 }
