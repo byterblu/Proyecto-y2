@@ -508,6 +508,10 @@ body{
     padding-left: 10px;
 }
 
+.texto-video-1 a{
+    text-decoration: none;
+}
+
 .texto-video-1 h3{
     font-size: 14px;
     color: white;
