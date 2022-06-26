@@ -121,9 +121,31 @@ body{
 }
 
 .texto-lista{
-    margin-right: 25px;
+    margin: 25px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+}
+
+button{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    width: 120px;
+    height: 40px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid #3b6fff;
+    cursor: pointer;
+}
+
+button .color-azul{
+    color: #3b6fff;
+}
+
+button a{
+    color: #3b6fff;
+    text-decoration: none;
 }
 
 .texto-lista label img{
@@ -192,7 +214,12 @@ input[id^="mostrar-menu-usuario"]:checked + label + .seccion-busqueda-usuario{
     display: flex;
     flex-direction: row;
     cursor: pointer;
-    width: 290px;
+    width: 300px;
+}
+
+#flecha-derecha{
+    padding-left: 80px;
+    font-size: 25px;
 }
 
 .seccion-busqueda-ind-usuario:hover{
@@ -202,6 +229,16 @@ input[id^="mostrar-menu-usuario"]:checked + label + .seccion-busqueda-usuario{
 
 
 .seccion-busqueda-ind-usuario p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    margin-left: 5px;
+    color: white;
+}
+
+.seccion-busqueda-ind-usuario a{
+    text-decoration: none;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -346,7 +383,7 @@ input[id^="mostrar-menu"]:checked + label + .seccion-busqueda{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.2rem;
+    font-size: 16px;
     margin-left: 5px;
     color: white;
 }
@@ -749,4 +786,127 @@ input[id^="mostrar-menu"]:checked + label + .seccion-busqueda{
     padding-top: 50px;
     color: white;
     font-size: 10px;
+}
+
+/*LOGOUT*/
+
+input[id^="mostrar-menu-logout"]{
+    display: none;
+    
+}
+
+input[id^="mostrar-menu-logout"] + label{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+input[id^="mostrar-menu-logout"] ~ .seccion-busqueda-logout {
+    height: 0; 
+    overflow: hidden;
+    opacity: 0;
+    
+}
+
+input[id^="mostrar-menu-logout"]:checked + label + .seccion-busqueda-logout{
+    height: auto;
+    opacity: 1;
+    
+}
+
+
+.seccion-busqueda-logout{
+    position: absolute;
+    width: auto;
+    top: 60px;
+    left: 0;
+    overflow: hidden;
+    height: auto;
+    background: rgb(32, 32, 32);
+    display: grid;
+    grid-template-columns: repeat(1,260px);
+    grid-template-rows: 40px 40px 40px 40px 8px 40px 40px 120px 40px 40px 40px 8px 40px 40px 40px ;
+    gap: 7px;
+    transition: all 1s ;
+    
+    
+}
+
+.texto-lista-logout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.seccion-busqueda-ind-logout{  
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    width: 300px;
+}
+.seccion-busqueda-ind-logout-completo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1px;
+    padding-bottom: 10px;
+    width: 250px;
+    border-top: 2px solid #383838;
+    border-bottom: 2px solid #383838
+}
+
+.seccion-busqueda-ind-logout-completo p{
+    color: white;
+    font-size: 14px;
+    padding: 10px;
+    margin-left: 20px;
+}
+
+#flecha-derecha{
+    padding-left: 80px;
+    font-size: 25px;
+}
+
+.seccion-busqueda-ind-logout:hover{
+    background: rgba(63, 63, 63, 0.986);
+}
+
+
+
+.seccion-busqueda-ind-logout p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    margin-left: 5px;
+    color: white;
+}
+
+.seccion-busqueda-ind-logout a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    margin-left: 5px;
+    color: white;
+}
+
+.seccion-busqueda-ind-logout span{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+
+
+.seccion-busqueda-logout h3{
+    margin-left: 70px;
+    font-size: 1rem;
+    color: #9e9e9e;
 }
