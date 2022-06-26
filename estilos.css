@@ -737,6 +737,51 @@ input[id^="mostrar-menu"]:checked + label + .seccion-busqueda{
     padding-right: 8px;
 }
 
+/* .me-gusta span:active{
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+} */
+
+input[id^="me-gusta-active"]{
+    display: none;
+    
+}
+
+input[id^="me-gusta-active"] + label{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48 */
+    
+}
+
+input[id^="me-gusta-active"] ~ .material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+    
+}
+
+input[id^="me-gusta-active"]:checked + label + .material-symbols-outlined{
+      font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+    
+}
+
+
 
 .caja-suscribir{
     width: 100%;
