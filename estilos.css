@@ -177,10 +177,10 @@ input[id^="mostrar-menu-usuario"]:checked + label + .seccion-busqueda-usuario{
     right: 0;
     overflow: hidden;
     /* height: 0px; */
-    background: rgb(32, 32, 32);
+    background: rgba(32, 32, 32, 0.986);
     display: grid;
     grid-template-columns: repeat(1,300px);
-    grid-template-rows: 40px 40px 40px 40px 8px 40px 40px 40px 40px 40px 40px 8px 40px 40px 40px ;
+    grid-template-rows: 40px 40px 40px 40px 8px 40px 40px 40px 40px 40px 40px 8px 40px 40px 40px 40px 40px ;
     gap: 7px;
     transition: all 1s ;
     border: 1px solid #383838
